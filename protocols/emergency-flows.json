@@ -1,0 +1,70 @@
+{
+  "protocols": [
+    {
+      "id": "fall_trauma",
+      "name": "Fall / Trauma",
+      "start_question": "Is the person responding?",
+      "states": [
+        {
+          "id": "check_responsiveness",
+          "question": "Is the person responding?",
+          "options": ["yes", "no", "unknown"]
+        },
+        {
+          "id": "check_breathing",
+          "question": "Is the person breathing?",
+          "options": ["yes", "no", "unknown"]
+        },
+        {
+          "id": "check_bleeding",
+          "question": "Is there major visible bleeding?",
+          "options": ["yes", "no", "unknown"]
+        }
+      ]
+    },
+    {
+      "id": "severe_bleeding",
+      "name": "Severe Bleeding",
+      "start_question": "Is there visible bleeding?",
+      "states": [
+        {
+          "id": "check_bleeding",
+          "question": "Is there visible bleeding?",
+          "options": ["yes", "no", "unknown"]
+        },
+        {
+          "id": "check_severity",
+          "question": "Does the bleeding appear severe or continuous?",
+          "options": ["yes", "no", "unknown"]
+        },
+        {
+          "id": "check_consciousness",
+          "question": "Is the person responding?",
+          "options": ["yes", "no", "unknown"]
+        }
+      ]
+    },
+    {
+      "id": "unresponsive_person",
+      "name": "Unresponsive Person",
+      "start_question": "Is the person breathing?",
+      "states": [
+        {
+          "id": "check_responsiveness",
+          "question": "Is the person responding?",
+          "options": ["yes", "no", "unknown"]
+        },
+        {
+          "id": "check_breathing",
+          "question": "Is the person breathing?",
+          "options": ["yes", "no", "unknown"]
+        },
+        {
+          "id": "check_environment",
+          "question": "Is the surrounding environment safe?",
+          "options": ["yes", "no", "unknown"]
+        }
+      ]
+    }
+  ]
+}
